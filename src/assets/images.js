@@ -1,4 +1,4 @@
-const TrashIcon = require('./icons/trash.png');
+const TrashIcon = require('./icons/trashcan.png');
 const EarthIcon = require('./icons/earth.png');
 const doneIcon = require('./icons/done.png');
 
