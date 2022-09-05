@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "backgroundColor": "#F5F5F5",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingHorizontal": 16,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 24,
+        }
+      }
+    >
+      ALL_TASKS
+    </Text>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "testUri": "../../../src/assets/icons/earth.png",
+          }
+        }
+        style={
+          Object {
+            "height": 25,
+            "width": 25,
+          }
+        }
+      />
+    </View>
+  </View>
+  <RCTScrollView
+    ListEmptyComponent={[Function]}
+    contentContainerStyle={
+      Object {
+        "paddingVertical": 24,
+      }
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    style={
+      Object {
+        "paddingHorizontal": 16,
+        "paddingVertical": 16,
+      }
+    }
+    viewabilityConfigCallbackPairs={Array []}
+  >
+    <View>
+      <Text
+        style={
+          Object {
+            "color": "#42aaf5",
+            "fontSize": 18,
+            "textAlign": "center",
+          }
+        }
+      >
+        NO_TASKS
+      </Text>
+    </View>
+  </RCTScrollView>
+  <View
+    style={
+      Object {
+        "elevation": 5,
+        "paddingHorizontal": 16,
+        "shadowColor": "#000",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.25,
+        "shadowRadius": 3.84,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#42aaf5",
+          "borderRadius": 12,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontSize": 21,
+            "lineHeight": 50,
+          }
+        }
+      >
+        ADD_TASK
+      </Text>
+    </View>
+  </View>
+  <Modal
+    animationIn="zoomInDown"
+    animationInTiming={600}
+    animationOut="zoomOutUp"
+    animationOutTiming={600}
+    backdropOpacity={0.6}
+    backdropTransitionInTiming={600}
+    backdropTransitionOutTiming={600}
+    isVisible={false}
+    onBackdropPress={[Function]}
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "white",
+          "borderRadius": 12,
+          "padding": 22,
+        }
+      }
+    >
+      <TextInput
+        autoFocus={true}
+        onChangeText={[Function]}
+        placeholder="ADD_TASK"
+        style={
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 16,
+            "marginVertical": 8,
+            "paddingHorizontal": 16,
+            "paddingVertical": 12,
+          }
+        }
+        value=""
+      />
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#42aaf5",
+            "borderRadius": 12,
+            "justifyContent": "center",
+            "opacity": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#FFFFFF",
+              "fontSize": 21,
+              "lineHeight": 50,
+            }
+          }
+        >
+          ADD
+        </Text>
+      </View>
+    </View>
+  </Modal>
+</RCTSafeAreaView>
+`;
