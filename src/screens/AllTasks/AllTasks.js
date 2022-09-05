@@ -8,7 +8,7 @@ import TasksList from '../../blocks/TasksList';
 const AllTasks = ({tasks, addNewTask, setTaskAsDone, deleteTask}) => {
   const [allTaskModalVisibility, setAllTaskModalVisibility] = useState(false);
 
-  const setTaskAsDoness = id => setTaskAsDone(id);
+  const taskPressHandler = id => setTaskAsDone(id);
   const onModalBackdropPress = () => setAllTaskModalVisibility(false);
 
   const onTaskSubmit = id => {
@@ -26,7 +26,7 @@ const AllTasks = ({tasks, addNewTask, setTaskAsDone, deleteTask}) => {
       <TasksList
         deleteTask={deleteTask}
         tasks={tasks}
-        setTaskAsDone={setTaskAsDoness}
+        setTaskAsDone={taskPressHandler}
       />
       <View style={styles.buttonContainer}>
         <Button title={'ADD_TASK'} onPress={addTaskHandler} />

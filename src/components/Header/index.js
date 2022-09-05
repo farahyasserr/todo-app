@@ -1,11 +1,18 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {LanguageToggle} from '../../blocks';
+import LocalizedText from '../LocalizedText';
 import styles from './styles';
-const Header = () => {
+import * as Animatable from 'react-native-animatable';
+
+const Header = ({title}) => {
   return (
-    <View style={styles.container}>
-      <Text>All Tasks</Text>
-    </View>
+    <Animatable.View
+      animation={'fadeInDown'}
+      duration={1000}
+      style={styles.container}>
+      <LocalizedText style={styles.text}>{title}</LocalizedText>
+      <LanguageToggle />
+    </Animatable.View>
   );
 };
 

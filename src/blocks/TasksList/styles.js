@@ -3,7 +3,7 @@ import colors from '../../theme/colors';
 
 export default StyleSheet.create({
   listContainer: {
-    paddingVertical: 16,
+    paddingVertical: 10,
     paddingHorizontal: 16,
   },
   listContentContainer: {
