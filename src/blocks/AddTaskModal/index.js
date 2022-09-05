@@ -30,13 +30,17 @@ const AddTaskModal = ({isVisible, onBackDropPress, onTaskSubmit}) => {
           onChangeValue={onChangeTitle}
           autoFocus={true}
         />
-        <Button title={'ADD'} onPress={onAddButtonPress} />
+        <Button
+          title={'ADD'}
+          onPress={onAddButtonPress}
+          disabled={!todoTitle}
+        />
       </View>
     </Modal>
   );
 };
 
-AddTaskModal.PropTypes = {
+AddTaskModal.propTypes = {
   isVisible: PropTypes.bool,
   onBackDropPress: PropTypes.func,
   onTaskSubmit: PropTypes.func,

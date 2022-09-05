@@ -1,13 +1,11 @@
-import React, {useState, useCallback} from 'react';
+import React, {useState} from 'react';
 import AllTasksView from './AllTasks';
 
 const AllTasksContainer = () => {
   const [tasks, setTasks] = useState([
-    {id: 1, title: 'Call mama', done: true},
-    {id: 2, title: 'Call baba', done: false},
+    {id: 1, title: 'Practice', done: true},
+    {id: 2, title: 'Grocery', done: false},
     {id: 3, title: 'Go shopping', done: true},
-    {id: 4, title: 'Go To practice', done: false},
-    {id: 5, title: 'Zaki', done: false},
   ]);
 
   const addNewTask = taskTitle => {
@@ -21,27 +19,19 @@ const AllTasksContainer = () => {
     ]);
   };
 
-  const setTaskAsDone = useCallback(
-    taskId => {
-      console.log('taaaaasks', tasks, taskId);
-      const doneTaskIndex = tasks.findIndex(item => item.id === taskId);
-      console.log('INDEX', doneTaskIndex);
-      const newTasks = [...tasks];
-      newTasks[doneTaskIndex].done = true;
-      setTasks(newTasks);
-    },
-    [tasks],
-  );
+  const setTaskAsDone = taskId => {
+    const doneTaskIndex = tasks.findIndex(item => item.id === taskId);
+    const newTasks = [...tasks];
+    newTasks[doneTaskIndex].done = true;
+    setTasks(newTasks);
+  };
 
-  const deleteTask = useCallback(
-    taskId => {
-      let taskIndex = tasks.findIndex(item => item.id === taskId);
-      let newTasks = [...tasks];
-      newTasks.splice(taskIndex, 1);
-      setTasks(newTasks);
-    },
-    [tasks],
-  );
+  const deleteTask = taskId => {
+    let taskIndex = tasks.findIndex(item => item.id === taskId);
+    let newTasks = [...tasks];
+    newTasks.splice(taskIndex, 1);
+    setTasks(newTasks);
+  };
 
   return (
     <AllTasksView

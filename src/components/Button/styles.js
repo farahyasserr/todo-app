@@ -7,6 +7,9 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  disabledContainer: {
+    backgroundColor: colors.disabledGrey,
+  },
   text: {
     color: colors.white,
     fontSize: 21,
