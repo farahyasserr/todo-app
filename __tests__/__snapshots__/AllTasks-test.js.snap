@@ -11,12 +11,21 @@ exports[`renders correctly 1`] = `
   }
 >
   <View
+    collapsable={false}
+    forwardedRef={[Function]}
     style={
       Object {
         "alignItems": "center",
         "flexDirection": "row",
         "justifyContent": "space-between",
+        "marginTop": 16,
+        "opacity": 0,
         "paddingHorizontal": 16,
+        "transform": Array [
+          Object {
+            "translateY": -100,
+          },
+        ],
       }
     }
   >
@@ -85,7 +94,7 @@ exports[`renders correctly 1`] = `
     style={
       Object {
         "paddingHorizontal": 16,
-        "paddingVertical": 16,
+        "paddingVertical": 10,
       }
     }
     viewabilityConfigCallbackPairs={Array []}
@@ -189,6 +198,11 @@ exports[`renders correctly 1`] = `
         value=""
       />
       <View
+        accessibilityState={
+          Object {
+            "disabled": true,
+          }
+        }
         accessible={true}
         collapsable={false}
         focusable={true}
@@ -202,7 +216,7 @@ exports[`renders correctly 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "backgroundColor": "#42aaf5",
+            "backgroundColor": "#ddd",
             "borderRadius": 12,
             "justifyContent": "center",
             "opacity": 1,
